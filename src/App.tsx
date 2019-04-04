@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
+import {MuiThemeProvider} from "@material-ui/core";
+import Particles from 'react-particles-js';
+import {particleConfig} from "./particleConfig";
+import {theme} from "./theme";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-           Duronto97
-          </p>
-        </header>
-          <div>
-              <canvas id="bg-animation" width="2776" height="876"></canvas>
-          </div>
+        <MuiThemeProvider theme={theme}>
+        <div className="App">
+          <h1>Duranta97</h1>
+            <Particles  params={{...particleConfig as any}}/>
       </div>
+        </MuiThemeProvider>
     );
   }
 }
