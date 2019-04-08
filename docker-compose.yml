@@ -4,8 +4,8 @@ services:
     restart: always
     image: 127.0.0.1:7000/duranta-nginx:latest
     build:
-      dockerfile: Dockerfile
-      context: dockerfiles/nginx
+      dockerfile: dockerfiles/nginx/Dockerfile
+      context: .
     ports:
       - 8989:80
     ulimits:
@@ -24,9 +24,5 @@ services:
         delay: 1s
         max_attempts: 5
         window: 120s
-    networks:
-      - duranta
-networks:
-  duranta:
 volumes:
-  duranta-data:
+  duranta-data_new:
