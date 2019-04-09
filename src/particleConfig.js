@@ -66,20 +66,7 @@ export const particleConfig  = {
                 "rotateY": 600
         }
     }
-},
-    "interactivity": {
-    "detect_on": "canvas",
-        "events": {
-        "onhover": {
-            "enable": true,
-                "mode": "bubble"
-        },
-        "onclick": {
-            "enable": true,
-                "mode": "repulse"
-        },
-        "resize": true
-    },
+}, "interactivity": {
     "modes": {
         "grab": {
             "distance": 400,
