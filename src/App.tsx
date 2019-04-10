@@ -12,8 +12,7 @@ class App extends Component {
     return (
         <MuiThemeProvider theme={theme}>
             <div className="App">
-                <h1 className={classnames('neon-effect' )}>Duranta97</h1>
-                <Particles  params={{...particleConfig as any}}/>
+                <h1>Welcome to Duranta97</h1>
             </div>
         </MuiThemeProvider>
     );
