@@ -12,7 +12,7 @@ class App extends Component {
     return (
         <MuiThemeProvider theme={theme}>
             <div className="App">
-                <h1>Welcome to Duranta97</h1>
+                <h1 className={'main-header'}>Welcome to Duranta97</h1>
             </div>
         </MuiThemeProvider>
     );

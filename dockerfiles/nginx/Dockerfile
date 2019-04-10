@@ -6,18 +6,17 @@ FROM node:10.15.0 AS builder
 
 WORKDIR /usr/src/app
 #COPY yarn.lock .
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
+
 
 RUN ls
 COPY src src
-
 COPY public public
-
-COPY package.json .
-COPY package-lock.json .
-
 COPY tsconfig.json .
 RUN ls
-RUN npm install
+
 RUN npm run build
 RUN ls
 
